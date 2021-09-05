@@ -14,17 +14,19 @@ $exists = file_exists("studentDB.txt");
 
   if(($username||$regNo ||$gender||$age||$course||$email||$password) !== null){
 
-  $studentDetails= array($username,$regNo,$gender,$age,$course,$email,$password);
+  $studentDetails= array("{",$username,",",$regNo,",",$gender,",",$age,",",$course,",",$email,",",$password,"}","\n");
+  $holder=file_put_contents($studentDb,implode("",$studentDetails));
 
 
     if($exists){
       $openFile =fopen($studentDb,"a");
-      fwrite($openFile,nl2br(json_encode($studentDetails)));
+      fwrite($openFile,$holder);
       fclose($openFile);
      echo "Hello";
     }else{
       echo "file does not exist";
     }
+    // nl2br(json_encode() )
 }
 
 
