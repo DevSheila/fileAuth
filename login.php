@@ -1,18 +1,21 @@
 <?php
-// function verify ($regNo,$password){
-
-// }
-
-
-$studentDb = "studentDB.txt";
-$exists = file_exists("studentDB.txt");
-if($exists){
-  $openFile =fopen($studentDb,"r");
-  $fileContents= json_decode(file_get_contents($studentDb,true));
-  echo $fileContents[0];
-
-}else{
-  echo 'file not found';
+// function verify ($regNo,$password)
+$regNo = $_POST['regNologin'];
+$password = $_POST['passwordlogin'];
+$success = false;
+$username ="rt";
+$studentDb = file("studentDb.txt");
+foreach($studentDb as $logininfo){
+  $studentDetails = explode('~',$logininfo);
+  if($studentDetails[1] == $regNo && $studentDetails[6] == $password){
+    $success = true;
+     $username = $studentDetails[0];
+     break;
+  }
 }
-
+if($success = true){
+  echo "Welcome \t $username";
+}else{
+  echo "failed Login";
+}
 ?>

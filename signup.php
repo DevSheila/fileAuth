@@ -5,30 +5,28 @@
   $age= $_POST['age'];
   $course= $_POST['course'];
   $email= $_POST['email'];
+  $phone= $_POST['phone'];
   $password= $_POST['password'];
 
 
 $studentDb = "studentDB.txt";
 $exists = file_exists("studentDB.txt");
-
-
+ if($exists){
   if(($username||$regNo ||$gender||$age||$course||$email||$password) !== null){
-
-  $studentDetails= array("{",$username,",",$regNo,",",$gender,",",$age,",",$course,",",$email,",",$password,"}","\n");
-  $holder=file_put_contents($studentDb,implode("",$studentDetails));
-
-
-    if($exists){
-      $openFile =fopen($studentDb,"a");
-      fwrite($openFile,$holder);
-      fclose($openFile);
-     echo "Hello";
+    $holder = $username."~".$regNo."~".$gender."~".$age."~".$course."~".$email."~".$password."~".$phone;
+    // $timestamp = time();
+ $studentDb = fopen($studentDb,"a");
+ fwrite($studentDb,$holder."\n");
+ fclose($studentDb); 
+ 
+ header("Location:index.php");
     }else{
-      echo "file does not exist";
+      echo "fill the form with your details";
+    }}
+    else{
+      echo "File Missing";
     }
-    // nl2br(json_encode() )
-}
-
+  
 
 
 

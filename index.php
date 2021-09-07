@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeTAX</title>
+    <title>Student Portal</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./script.js">
@@ -14,7 +14,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WeTAX</title>
+    <title>Student Portal</title>
 
     <link
       rel="stylesheet"
@@ -46,16 +46,16 @@
       <div class="form-container">
         <form id="signIn"  method="POST" action="login.php">
           <h1 class="text-center title">
-            <b> WeTAX </b>
+            <b> Student Portal </b>
           </h1>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <label for="exampleInputEmail1" class="form-label">Registration Number</label>
             <input
               type="name"
               class="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              name="username"
+              name="regNologin"
               required
             />
           </div>
@@ -67,7 +67,7 @@
               type="password"
               class="form-control"
               id="exampleInputPassword1"
-              name="password"
+              name="passwordlogin"
               required
             />
           </div>
@@ -84,7 +84,7 @@
           <div class="icons m-4">
             <img src="./img/icons/facebook (1).png" alt="" />
             <img src="./img/icons/twitter.png" alt="" />
-            <img src="./img/icons/google-plus.png" alt="" />
+            <img src="./img/icons/google-plus.png" alt=""/>
           </div>
 
           <p class="text-center">
@@ -97,6 +97,7 @@
           <h1 class="text-center title">
             <b> Register</b>
           </h1>
+          
           <div class="mb-3">
             <label for="userName">Username</label>
             <input type="text" class="form-control" id="userName" name="username"/>
@@ -125,8 +126,7 @@
 
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
-            >
+              >Email address</label>
             <input
               type="email"
               class="form-control"
@@ -135,6 +135,10 @@
               required
               name="email"
             />
+          </div>
+          <div class="mb-3">
+            <label for="phone">Phone Number</label>
+            <input type="text" class="form-control" id="phone" name="phone"/>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label"

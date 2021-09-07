@@ -1,2 +1,5 @@
-{sheilasharon1023,ccs/00215/019,female,18,hjkh,sheilasharon10@gmail.com,89}
-76
+sheilasharon1023~ccs/00215/019~female~18~hjkh~sheilasharon10@gmail.com~8900~0700000000
+russel~ccs/00209/019~male~22~Computer Science~russelosiemo@gmail.com3~1234~+254733458005
+Royls~ci/091283/017~male~23~Computer Information~royls@maseno.ac.ke~1234~0876543
+stacks~CIT/000002/019~male~23~Computer Technology~stack@gmail.com~12345678~+254733458012
+stack~CIT/000001/019~male~23~Computer Technology~stack@gmail.com~123~+254733458012
