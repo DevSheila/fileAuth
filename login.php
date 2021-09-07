@@ -3,7 +3,7 @@
 $regNo = $_POST['regNologin'];
 $password = $_POST['passwordlogin'];
 $success = false;
-$username ="rt";
+$username ="";
 $studentDb = file("studentDb.txt");
 foreach($studentDb as $logininfo){
   $studentDetails = explode('~',$logininfo);
