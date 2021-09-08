@@ -1,0 +1,8 @@
+{
+    "students":[
+      
+{"username":"wambui","regNo":"ccs\/00217\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798"}
+,{"username":"joan","regNo":"ccs\/00216\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798"},
+{"username":"george","regNo":"ccs\/00219\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798"},
+{"username":"susan","regNo":"ccs\/00218\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798"}]
+}
