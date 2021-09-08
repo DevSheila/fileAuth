@@ -44,7 +44,7 @@
   <body>
     <div class="container">
       <div class="form-container">
-        <form id="signIn"  method="POST" action="login.php">
+        <form id="signIn"  method="POST" action="log.php">
           <h1 class="text-center title">
             <b> Student Portal </b>
           </h1>
@@ -93,7 +93,7 @@
           </p>
         </form>
 
-        <form id="signUp" method="POST" action="signup.php">
+        <form id="signUp" method="POST" action="sign.php">
           <h1 class="text-center title">
             <b> Register</b>
           </h1>
