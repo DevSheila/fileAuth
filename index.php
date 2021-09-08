@@ -22,7 +22,6 @@
       type="text/css"
       media="all"
     />
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -39,7 +38,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="css/login.css"  type="text/css"/>
   </head>
   <body>
     <div class="container">
@@ -76,7 +75,7 @@
           </div>
 
           <div class="d-flex justify-content-center">
-                    <button  type="submit" class="btn" id="login-btn" >Login</button>
+                    <button  type="submit" class="btn btn-dark" id="login-btn" >Login</button>
                   </div>
 
           <p class="text-center m-3">or</p>
@@ -92,97 +91,99 @@
             <span class="link sign-up"> Sign up here</span>
           </p>
         </form>
+   
 
-        <form id="signUp" method="POST" action="sign.php">
-          <h1 class="text-center title">
-            <b> Register</b>
-          </h1>
-          
-          <div class="mb-3">
-            <label for="userName">Username</label>
-            <input type="text" class="form-control" id="userName" name="username"/>
-          </div>
+                <form id="signUp" method="POST" action="sign.php">
+                  <h1 class="text-center title">
+                    <b> Register</b>
+                  </h1>
+                  
+                  <div class="mb-3">
+                    <label for="userName">Username</label>
+                    <input type="text" class="form-control" id="userName" name="username"/>
+                  </div>
 
-          <div class="mb-3">
-            <label for="regNo">Registration Number</label>
-            <input type="text" class="form-control" id="regNo" name="regNo"/>
-          </div>
+                  <div class="mb-3">
+                    <label for="regNo">Registration Number</label>
+                    <input type="text" class="form-control" id="regNo" name="regNo"/>
+                  </div>
 
-          <div class="mb-3">
-            <label for="gender">Gender</label>
-            <input type="text" class="form-control" id="gender" name="gender"/>
-          </div>
+                  <div class="mb-3">
+                    <label for="gender">Gender</label>
+                    <input type="text" class="form-control" id="gender" name="gender"/>
+                  </div>
 
-          <div class="mb-3">
-            <label for="age">Age</label>
-            <input type="number" class="form-control" id="age" name="age"/>
-          </div>
+                  <div class="mb-3">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" id="age" name="age"/>
+                  </div>
 
-          <div class="mb-3">
-            <label for="course">Course</label>
-            <input type="text" class="form-control" id="course" name="course"/>
-          </div>
+                  <div class="mb-3">
+                    <label for="course">Course</label>
+                    <input type="text" class="form-control" id="course" name="course"/>
+                  </div>
 
 
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              required
-              name="email"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="phone">Phone Number</label>
-            <input type="text" class="form-control" id="phone" name="phone"/>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Password</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-              name="password"
-              required
-            />
-          </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      required
+                      name="email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="form-control" id="phone" name="phone"/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      name="password"
+                      required
+                    />
+                  </div>
 
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Confirm Password</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-              required
-            />
-          </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Confirm Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      required
+                    />
+                  </div>
 
-          <div class="d-flex justify-content-center">
-            <button  type="submit" class="btn" id="login-btn" >Sign Up</button>
-          
-          </div>
+                  <div class="d-flex justify-content-center">
+                    <button  type="submit" class="btn btn-dark" id="login-btn" >Sign Up</button>
+                  
+                  </div>
 
-          <p class="text-center m-3">or Sign up using</p>
+                  <p class="text-center m-3">or Sign up using</p>
 
-          <div class="icons m-4">
-            <img src="./img/icons/facebook (1).png" alt="" />
-            <img src="./img/icons/twitter.png" alt="" />
-            <img src="./img/icons/google-plus.png" alt="" />
-          </div>
+                  <div class="icons m-4">
+                    <img src="./img/icons/facebook (1).png" alt="" />
+                    <img src="./img/icons/twitter.png" alt="" />
+                    <img src="./img/icons/google-plus.png" alt="" />
+                  </div>
 
-          <p class="text-center">
-            Have an account? <span class="link sign-in"> Sign in here</span>
-          </p>
-        </form>
-      </div>
+                  <p class="text-center">
+                    Have an account? <span class="link sign-in"> Sign in here</span>
+                  </p>
+                </form>
+
+    
 
 
 

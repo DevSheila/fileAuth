@@ -1,8 +1,9 @@
 {
     "students":[
       
-{"username":"wambui","regNo":"ccs\/00217\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798"}
-,{"username":"russel","regNo":"ccs\/00216\/019","gender":"male","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798"},
-{"username":"george","regNo":"ccs\/00219\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798"},
-{"username":"susan","regNo":"ccs\/00218\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798"}]
+{"username":"wambui","regNo":"ccs\/00217\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/10:58:42pm"}
+,{"username":"russel","regNo":"ccs\/00216\/019","gender":"male","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/10:58:42pm"},
+{"username":"george","regNo":"ccs\/00219\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/10:58:42pm"},
+{"username":"susan","regNo":"ccs\/00218\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/10:58:42pm"},
+{"username":"osiemo","regNo":"ccs\/00209\/019","gender":"male","age":"98","course":"kk","email":"wambuimary360@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/10:58:42pm"},{"username":"osiemo","regNo":"ccs\/00209\/019","gender":"male","age":"98","course":"kk","email":"wambuimary360@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/11:01:22pm"}]
 }

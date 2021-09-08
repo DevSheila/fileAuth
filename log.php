@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 
 $regNo= $_POST['regNologin'];
 $password= $_POST['passwordlogin'];
@@ -12,14 +14,14 @@ $json =json_decode($jsondata,true);
 
 foreach($json['students'] as $student){
     if( ($student['regNo']==$regNo) && ($student['password']===$password)){
-      echo $student['username'];
+   
+      $_SESSION['regNo'] =$regNo;
+      header("Location: profile.php");
+    }else{
+
+      echo "no such records available";
     }
-    //  if(!($student['regNo']==$regNo)){
-    //   echo "invalid registartion number";
-    // } 
-    // if(!($student['password']===$password)){
-    //   echo "invalid password";
-    // }
+
 }
 
 ?>
