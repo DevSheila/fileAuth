@@ -19,9 +19,10 @@ $exists = file_exists("stud.json");
   if(($username||$regNo ||$gender||$age||$course||$email||$password) !== null){
     $date = date("Y/m/d/h:i:sa");
     $_SESSION['regNo'] =$regNo;
+    $_SESSION['password'] =$password;
 
     $studentData =array("username" =>$username,"regNo"=>$regNo,"gender"=>$gender,"age"=>$age,"course"=>$course,"email"=>$email,"password"=>$password,"phone"=>$phone,"time"=>$date);
-    $holder=",".json_encode($studentData)."]";
+    $holder=",".json_encode($studentData)."\n"."]";
 
 
 

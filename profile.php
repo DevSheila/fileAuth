@@ -23,6 +23,15 @@
             <div class="row bg-dark p-5 profile-container-1" >
                
                 <div class="col-lg-12 col-md-12 col-12 mb-5"> 
+                    <?php
+                        session_start();
+
+                        if($_SESSION['regNo'] == null ||$_SESSION['password'] == null){
+                            echo "<h1>Invalid user credentials,please try again!!</h1>";
+                        }else{
+
+                        
+                    ?>
                         <table class="table table-dark">
                             <thead class="d-flex justify-content-center">
                                 <tr>
@@ -36,13 +45,13 @@
                                 <tr >
                                     <td class="d-flex justify-content-center">
                                       
-                                        <h5>
+                                        <h5 >
                                             <span>  
                                             <img src="img/computer.png" alt="logo" style="height: 50px;width: 50px;"/>
                                             </span>
                                             <?php
                                                
-                                                session_start();
+
                                                 $jsondata = file_get_contents("stud.json");
                                                 $json =json_decode($jsondata,true);
 
@@ -159,7 +168,8 @@
 
                             
                             </tbody>
-                        </table>  
+                        </table> 
+                        <?php }?> 
         </div> 
     </div>
            
