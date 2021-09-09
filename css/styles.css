@@ -10,18 +10,18 @@ body {
   animation: drop 1.5s ease;
 }
 #nav-main {
-  background: #f00c0c; /* fallback for old browsers */
+  background: blueviolet; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #f00c0c,
-    #f00c0c
+    blueviolet,
+    blueviolet
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f00c0c,
-    #f00c0c
+    blueviolet,
+    blueviolet
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border: 3px solid #f00c0c;
+  border: 3px solid blueviolet;
 
   font-weight: bold;
 }
@@ -54,20 +54,20 @@ padding: 80px 0px;
   font-size: 1.5rem;
 }
 .explore-btn {
-  background-color: #f00c0c;
+  background-color: blueviolet;
   color: #fff;
   font-size: 19px;
   font-weight: 500;
 }
 .explore-btn:hover {
-  border: 2px solid #f00c0c;
+  border: 2px solid blueviolet;
   color: black;
   background-color: white;
   font-size: 19px;
   font-weight: 500;
 }
 .jumbotron {
-  background-color: #f00c0c;
+  background-color: blueviolet;
   color: #fff;
 }
 #what-we-do {
@@ -129,7 +129,7 @@ padding: 80px 0px;
 
 .footer {
   /* background-color: #f00c0c; 
-   */background: linear-gradient(to bottom, #f00c0c 0%, rgb(0, 0, 0) 100%);
+   */background: linear-gradient(to bottom, blueviolet 0%, rgb(0, 0, 0) 100%);
 
   color: #fff;
 }

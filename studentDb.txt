@@ -1,5 +1,9 @@
-sheilasharon1023~ccs/00215/019~female~18~hjkh~sheilasharon10@gmail.com~8900~0700000000
-russel~ccs/00209/019~male~22~Computer Science~russelosiemo@gmail.com3~1234~+254733458005
-Royls~ci/091283/017~male~23~Computer Information~royls@maseno.ac.ke~1234~0876543
-stacks~CIT/000002/019~male~23~Computer Technology~stack@gmail.com~12345678~+254733458012
-stack~CIT/000001/019~male~23~Computer Technology~stack@gmail.com~123~+254733458012
+sheilasharon1023~ccs/00215/019~female~18~Bsc. Computer Science~sheilasharon10@gmail.com~8900~0700000000
+russel~ccs/00209/019~male~22~Bsc. Computer Science~russelosiemo@gmail.com3~1234~+254733458005
+Royls~ci/091283/017~male~23~Bsc. Computer Information~royls@maseno.ac.ke~1234~0876543
+stacks~CIT/000002/019~male~23~Bsc. Computer Technology~stack@gmail.com~12345678~+254733458012
+stack~CIT/000001/019~male~23~ Bsc.Computer Technology~stack@gmail.com~123~+254733458012
+Schovenic Paula~CIT/00234/017~Female~23~Bsc. Internet Technology~paulas@gmail.com~1234~0876543
+nightKing~ITC/00010/019~male~24~Msc. Internet Technology~nightking@gmail.com~1234~+254
+Talia_Chi~ITCM/00246/015~Female~31~Msc. Machine Technology~talia@student.maseno.ac.ke~12345~010023556
+Gashi~TMC/00232/018~male~23~Maths & computer Science~gashimusic@gmail.com~1234~0794561235
