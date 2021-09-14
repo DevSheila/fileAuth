@@ -1,0 +1,26 @@
+{
+    "students":[
+      
+{"username":"wambui","regNo":"ccs\/00217\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/10:58:42pm"}
+,{"username":"russel","regNo":"ccs\/00216\/019","gender":"male","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/10:58:42pm"},
+{"username":"george","regNo":"ccs\/00219\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/10:58:42pm"},
+{"username":"susan","regNo":"ccs\/00218\/019","gender":"female","age":"89","course":"kk","email":"hunters@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/10:58:42pm"},
+{"username":"osiemo","regNo":"ccs\/00209\/019","gender":"male","age":"98","course":"kk","email":"wambuimary360@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/10:58:42pm"},
+{"username":"osiemo","regNo":"ccs\/00209\/019","gender":"male","age":"98","course":"kk","email":"wambuimary360@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/08\/11:01:22pm"},
+{"username":"daniel","regNo":"ccs\/00179\/019","gender":"male","age":"22","course":"comp","email":"danile@mail.com","password":"123","phone":"7689798","time":"2021\/09\/09\/01:15:12pm"},
+{"username":"donny","regNo":"CI\/00132\/018","gender":"male","age":"22","course":"Bachelors of science computer science","email":"danile@mail.com","password":"123","phone":"7689798","time":"2021\/09\/09\/01:30:53pm"}
+,
+{"username":"tiana","regNo":"CI\/00122\/016","gender":"female","age":"23","course":"Bachelors of science IT","email":"tiana@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/09\/01:38:33pm"}
+,
+{"username":"wendy","regNo":"CI\/00142\/016","gender":"female","age":"23","course":"Bachelors of science IT","email":"wendy@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/09\/01:39:23pm"}
+,{"username":"bruce","regNo":"ccs\/00215\/019","gender":"male","age":"24","course":"Bachelors of science comp technology","email":"wambuimary360@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/09\/01:41:03pm"}
+,{"username":"bruce","regNo":"ccs\/00128\/019","gender":"male","age":"24","course":"Bachelors of science comp technology","email":"wambuimary360@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/09\/01:41:38pm"}
+,{"username":"bruce","regNo":"CI\/00003\/018","gender":"male","age":"17","course":"Bachelors of science comp technology","email":"bruce@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/09\/01:42:39pm"}
+,
+{"username":"delly","regNo":"CI\/00004\/016","gender":"female","age":"56","course":"Bachelors of science comp technology","email":"kmjlk@gmail.com","password":"123","phone":"7689798","time":"2021\/09\/09\/01:43:37pm"}
+,{"username":"kamau","regNo":"ccs\/00017\/019","gender":"male","age":"25","course":"Bachelors of science IT","email":"kama@mail.com","password":"123","phone":"7689798","time":"2021\/09\/09\/01:45:50pm"}
+,{"username":"joan","regNo":"ccs\/00018\/015","gender":"female","age":"23","course":"Bachelors of science comp technology","email":"joan@gmail.com","password":"123","phone":"07689798","time":"2021\/09\/09\/01:54:14pm"}
+,{"username":"Tylor_Frank","regNo":"ccs\/00220\/019","gender":"male","age":"23","course":"Computer Science","email":"russelosiemo@gmail.com","password":"123","phone":"+254733458005","time":"2021\/09\/14\/03:34:22pm"}
+,{"username":"Gayla","regNo":"MIT\/00001\/019","gender":"Female","age":"23","course":"Computer Information","email":"gayla@gmail.com","password":"123","Image":"1631635599_Wangechi_Rachel.jpg","phone":"0700000000","time":"Tuesday 14th of September 2021 04:06:39 PM"}
+]
+}
