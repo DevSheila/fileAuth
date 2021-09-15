@@ -46,9 +46,7 @@
                                     <td class="d-flex justify-content-center">
                                       
                                         <h5 >
-                                            <span>  
-                                            <img src="<?php "userimg/".$userimage ?>" alt="logo" style="height: 50px;width: 50px;"/>
-                                            </span>
+                                        
                                             <?php
                                                
 
@@ -62,7 +60,13 @@
                                                         if( ($student['regNo']==$regNo)){
                                                             $username =$student['username'];
                                                             $userimage =$student['Image'];
-                                                            echo "<h5><center> Username: $username </center></h5>";
+                                                           ?>
+                                                            <span>  
+                                                                <img  src="<?php echo "userimg/".$userimage;?>" alt="logo" style="height: 50px;width: 50px;"/>
+                                                            </span>
+                                                            <?php
+                                                             echo "<h5><center> Username: $username </center></h5>";
+
                                                         }
                                                     }
                                               
@@ -77,6 +81,7 @@
                                     <td class="d-flex justify-content-center"> 
                                         <h5><span>
                                         <img src="img/id-card.png" alt="logo" style="height: 50px;width: 50px;"/>
+                                        
                                         </span>
                                         <?php
                                                
