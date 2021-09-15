@@ -1,6 +1,6 @@
 <?php
 session_start();
-date_default_timezone_set("EAT");
+date_default_timezone_set("Africa/Nairobi");
   $username= $_POST['username'];
   $regNo= $_POST['regNo'];
   $gender= $_POST['gender'];
