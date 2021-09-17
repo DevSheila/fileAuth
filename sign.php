@@ -30,11 +30,12 @@ $exists = file_exists("stud.json");
 
  $fh = fopen("stud.json","a");
  $contents=file_get_contents("stud.json");
-echo $contents;
+// echo $contents;
 
 
 $finalContents=str_replace(']',$holder,$contents);
 file_put_contents("stud.json", $finalContents );
+
  fclose($fh); 
  header("Location: profile.php");
  
