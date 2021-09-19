@@ -36,7 +36,7 @@
                             <thead class="d-flex justify-content-center">
                                 <tr>
                                     <th scope="col" class="">
-                                        <h5>STUDENT PROFILE</h5>
+                                        <h5> PROFILE</h5>
                                     </th>
                                 </tr>
                             </thead>
@@ -62,7 +62,7 @@
                                                             $userimage =$student['Image'];
                                                            ?>
                                                             <span>  
-                                                                <img  src="<?php echo "userimg/".$userimage;?>" alt="logo" style="height: 50px;width: 50px;"/>
+                                                                <img  src="<?php echo "userimg/".$userimage;?>" class="img-fluid rounded-circle" alt="logo" style="height: 100px;width: 100px;"/>
                                                             </span>
                                                             <?php
                                                              echo "<h5><center> Username: $username </center></h5>";
@@ -77,14 +77,8 @@
                                         </h5>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="d-flex justify-content-center"> 
-                                        <h5><span>
-                                        <img src="img/id-card.png" alt="logo" style="height: 50px;width: 50px;"/>
-                                        
-                                        </span>
-                                        <?php
-                                               
+                                                                       
+                                <?php
                                                
                                                $jsondata = file_get_contents("stud.json");
                                                $json =json_decode($jsondata,true);
@@ -94,23 +88,39 @@
 
                                                    foreach($json['students'] as $student){
                                                        if( ($student['regNo']==$regNo)){
-                                                           $regNo =$student['regNo'];
+                                                        if($regNo == "compAdmin"){
+                                                            ?>
+                                                           
+                                                           <?php 
+                                                        }else{
+                                                            
+                                                            ?>
+                                                            <tr>
+                                                                <td class="d-flex justify-content-center">  
+                                                                    <h5>
+                                                                        <span>
+                                                                            <img src="img/id-card.png "alt="logo" style="height: 50px;width: 50px;"/>
+                                                                        </span>
+                                                            <?php
+                                                             
                                                
-                                                           echo "<h5><center> RegNo: $regNo </center></h5>";
+                                                            echo "<h5><center> Registration Number : $regNo</center></h5>";
+
+                                                            ?>
+                                                                    </h5>
+                                                                </td>
+                                                             </tr>
+                                                            <?php
+                                                            
+
+                                                        }
+                                                         
                                                        }
                                                    }
                                              
                                                }
                                                    ?>
-                                        </h5>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="d-flex justify-content-center">  
-                                        <h5>
-                                            <span>
-                                            <img src="img/online-course.png "alt="logo" style="height: 50px;width: 50px;"/>
-                                            </span>
+                                         
                                             <?php
                                                
                                                $jsondata = file_get_contents("stud.json");
@@ -121,17 +131,39 @@
 
                                                    foreach($json['students'] as $student){
                                                        if( ($student['regNo']==$regNo)){
-                                                           $course =$student['course'];
+                                                        if($regNo == "compAdmin"){
+                                                            ?>
+                                                           
+                                                           <?php 
+                                                        }else{
+                                                            
+                                                            ?>
+                                                            <tr>
+                                                                <td class="d-flex justify-content-center">  
+                                                                    <h5>
+                                                                        <span>
+                                                                            <img src="img/online-course.png "alt="logo" style="height: 50px;width: 50px;"/>
+                                                                        </span>
+                                                            <?php
+                                                               $course =$student['course'];
                                                
-                                                           echo "<h5><center> Course :$course </center></h5>";
+                                                            echo "<h5><center> Course :$course </center></h5>";
+
+                                                            ?>
+                                                                    </h5>
+                                                                </td>
+                                                             </tr>
+                                                            <?php
+                                                            
+
+                                                        }
+                                                         
                                                        }
                                                    }
                                              
                                                }
                                                    ?>
-                                        </h5>
-                                    </td>
-                                </tr>
+                                
                             
                                 <tr>
                                     <td class="d-flex justify-content-center">
@@ -150,6 +182,7 @@
 
                                                    foreach($json['students'] as $student){
                                                        if( ($student['regNo']==$regNo)){
+                                                     
                                                            $email =$student['email'];
                                                
                                                            echo "<h5><center> Email :$email </center></h5>";
@@ -166,9 +199,38 @@
 
                                 <tr>
                                     <td class="d-flex justify-content-center">
-                                    <a type="button"  class="btn btn-primary "href="logout.php">Log out</a>
+                                    <a type="button"  class="btn btn-primary m-2"href="logout.php">Log out</a>
+                                    <?php
+                                               
+                                               $jsondata = file_get_contents("stud.json");
+                                               $json =json_decode($jsondata,true);
+
+                                               if( isset($_SESSION['regNo']  ) ) {
+                                                   $regNo =$_SESSION['regNo'];
+
+                                                   foreach($json['students'] as $student){
+                                                       if( ($student['regNo']==$regNo)){
+                                                         if($regNo == "compAdmin"){
+                                                             ?>
+                                                            <a type="button"  class="btn btn-success m-2"href="adminpdf.php">Student Details</a>
+                                                            <?php 
+                                                         }else{
+                                                             ?>
+                                                              <a type="button"  class="btn btn-success m-2"href="Details.php">Print</a>
+                                                             <?php
+
+                                                         }
+                                                       }
+                                                   }
+                                             
+                                               }
+                                                   ?>
+                                   
+                                   
+
                                   
                                     </td>
+                                   
                                 </tr>
 
                             

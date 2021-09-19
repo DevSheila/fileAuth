@@ -43,13 +43,13 @@
             <u>Login</u>
           </h1>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Registration Number</label>
+            <label for="exampleInputEmail1" class="form-label">Department ID</label>
             <input
               type="name"
               class="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              name="regNologin"
+              name="depIDlogin"
               required
             />
           </div>
@@ -97,29 +97,16 @@
                     <b> Register</b>
                   </h1>
                   
+              
                   <div class="mb-3">
-                    <label for="userName">Username</label>
-                    <input type="text" class="form-control" id="userName" name="username"/>
+                    <label for="regNo">Department ID</label>
+                    <input type="text" class="form-control" id="depID" name="depID"/>
                   </div>
 
+            
                   <div class="mb-3">
-                    <label for="regNo">Registration Number</label>
-                    <input type="text" class="form-control" id="regNo" name="regNo"/>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="gender">Gender</label>
-                    <input type="text" class="form-control" id="gender" name="gender"/>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="age">Age</label>
-                    <input type="number" class="form-control" id="age" name="age"/>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="course">Course</label>
-                    <input type="text" class="form-control" id="course" name="course"/>
+                    <label for="course">School</label>
+                    <input type="text" class="form-control" id="school" name="course"/>
                   </div>
 
 

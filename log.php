@@ -1,3 +1,5 @@
+
+
 <?php
 session_start();
 
@@ -33,4 +35,3 @@ foreach($json['students'] as $student){
 
 }
 
-?>

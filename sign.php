@@ -1,4 +1,5 @@
 <?php
+include("config.php");
 session_start();
 date_default_timezone_set("Africa/Nairobi");
   $username= $_POST['username'];
@@ -54,10 +55,34 @@ date_default_timezone_set("Africa/Nairobi");
               $fh = fopen("stud.json","a");
               $contents=file_get_contents("stud.json");
               $finalContents=str_replace(']',$holder,$contents);
-        
-              file_put_contents("stud.json", $finalContents );
-              fclose($fh); 
-              header("Location: profile.php");
+                      // Check connection
+              if (!$conn ||mysqli_connect_errno()) {
+                echo("Connection failed: " . mysqli_connect_error());
+              }else{
+                if($_SERVER["REQUEST_METHOD"] == "POST") {
+                  // username and password sent from form 
+                  // $myusername = mysqli_real_escape_string($conn,$_POST['username']);
+                  // $myemail= mysqli_real_escape_string($conn,$_POST['email']);
+                  // $mypassword = mysqli_real_escape_string($conn,$_POST['password']); 
+                  
+                  $sql = "INSERT INTO students (username,regNo,gender,age,course,email,password,image,phone,time)
+                  VALUES ('$username','$regNo','$gender','$age','$course','$email','$password','$new_image_name','$phone','$time')";
+
+                  
+                
+                    if ($conn->query($sql) === TRUE) {
+                      file_put_contents("stud.json", $finalContents );
+                      fclose($fh); 
+                      header("Location: profile.php");
+
+                    } else {
+                      echo "Error: " . $sql . "<br>" . $conn->error;
+                    }
+                    
+                    $conn->close();
+                  }
+                }
+             
         }else{
             print_r($errors);
           
