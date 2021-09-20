@@ -87,7 +87,7 @@
           <p>Administrator
           <a href="adminindex.php">Access From Here.</a></p>
           </center>
-          
+
         </form>
           </div>
         </div>
@@ -121,7 +121,15 @@
 
                   <div class="mb-3">
                     <label for="course">Course</label>
-                    <input type="text" class="form-control" id="course" name="course"/>
+                    <select class="form-control" id="course" name="course" >
+                    <option value="" disabled selected>--select A course--</option>
+                          <option value="BSc. Computer Science">BSc. Computer Science</option>
+                        <option value="BSc. Computer Technology">BSc. Computer Technology</option>
+                        <option value="BSc. Internet Technology">BSc. Internet Technology</option>
+                           <option value="BSc. Computer Informatics">BSc. Computer Informatics</option>
+                           <option value="BSc. Software Engineering">BSc. Software Engineering</option>
+                           <option value="BSc. Machine Computing">BSc. Machine Computing</option>
+                    </select>
                   </div>
 
 

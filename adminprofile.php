@@ -25,12 +25,6 @@
                 <div class="col-lg-12 col-md-12 col-12 mb-5"> 
                     <?php
                         session_start();
-
-                        if($_SESSION['depIDlogin'] == null ||$_SESSION['password'] == null){
-                            echo "<h1>Invalid user credentials,please try again!!</h1>";
-                        }else{
-
-                        
                     ?>
                         <table class="table table-dark">
                             <thead class="d-flex justify-content-center">
@@ -84,7 +78,7 @@
                                                $json =json_decode($jsondata,true);
 
                                                if( isset($_SESSION['depIDlogin']  ) ) {
-                                                   $depIDlogin =$_SESSION['depIDlogin'];
+                                                //    $depIDlogin =$_SESSION['depIDlogin'];
 
                                                    foreach($json['admin'] as $admin){
                                                        if( ($admin['depIDlogin']==$admin)){
@@ -104,7 +98,7 @@
                                                             <?php
                                                              
                                                
-                                                            echo "<h5><center> Registration Number : $depIDlogin</center></h5>";
+                                                            echo "<h5><center> Depertment ID : $depIDlogin</center></h5>";
 
                                                             ?>
                                                                     </h5>
@@ -142,11 +136,26 @@
                                                                 <td class="d-flex justify-content-center">  
                                                                     <h5>
                                                                         <span>
+                                                                            <img src="img/id-card.png "alt="logo" style="height: 50px;width: 50px;"/>
+                                                                        </span>
+                                                            <?php
+                                                             
+                                               
+                                                            echo "<h5><center> Depertment ID : $depIDlogin</center></h5>";
+
+                                                            ?>
+                                                                    </h5>
+                                                                </td>
+                                                             </tr>
+                                                            <tr>
+                                                                <td class="d-flex justify-content-center">  
+                                                                    <h5>
+                                                                        <span>
                                                                             <img src="img/online-course.png "alt="logo" style="height: 50px;width: 50px;"/>
                                                                         </span>
                                                             <?php
                                                                $school =$admin['school'];
-                                               
+                                                              
                                                             echo "<h5><center> School :$school </center></h5>";
 
                                                             ?>
@@ -238,7 +247,7 @@
                             
                             </tbody>
                         </table> 
-                        <?php }?> 
+                        
         </div> 
     </div>
            

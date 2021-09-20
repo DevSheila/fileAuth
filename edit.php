@@ -1,23 +1,18 @@
 <?php
  include "config.php";
-if(isset($_GET['edit'])){
-$id=$_GET['id'];
-$qry=mysqli_query($conn,"SELECT * FROM students WHERE id=$id");//select query
-$data=mysqli_fetch_array($qry);
-if(isset($_GET['update'])){
-$username=$_GET['username'];
-$regNo=$_GET['regNo'];
-$gender=$_GET['gender'];
-$course=$_GET['course'];
-$edit=mysqli_query($conn, "UPDATE students SET username='$username', regNo='$regNo',gender='$gender',age='$age',course='$course',email='$email',password ='$password',image='$image',phone='$phone', WHERE id=$id ");
-while($row=mysqli_fetch_array($edit)){
-      $car_Name=$row["car_Name"];
-      $fuel=$row["fuel"];
-      $cost=$row["cost"];
-      $Numbers=$row["Numbers"];
-}
-}
-}
+$id=$_REQUEST['id'];
+$qry=mysqli_query($conn,"SELECT * FROM students WHERE id='$id'") or die(mysqli_error($conn));//select query
+$data=mysqli_fetch_assoc($qry);
+
+      $username=$data["username"];
+      $regNo=$data["regNo"];
+      $course=$data["course"];
+      $age=$data["age"];
+      $email=$data["email"];
+      $phone=$data["phone"];
+      $age=$data["age"];
+    //   $image_URL=$row['image'];
+
 ?>
  
 <!DOCTYPE html>
@@ -77,9 +72,30 @@ while($row=mysqli_fetch_array($edit)){
                         </div>
                        <center>
                         <button type="submit" class="btn btn-danger" name="submit" value="delete">Submit</button> 
-        <button type="submit" class="btn btn-info" name="update" value="Cancel"><a href="admincontrol.php" style="text-decoration: none; font-family: sans-serif;">Cancel</a></button>
+        <button type="submit" class="btn btn-info" name="cancel" value="Cancel"><a href="admincontrol.php" style="text-decoration: none; font-family: sans-serif;">Cancel</a></button>
         </center>
                     </form>
+                    <?php
+                    
+    if(isset($_POST['submit'])){
+        $username=$_POST["username"];
+        $regNo=$_POST["regNo"];
+        $course=$_POST["course"];
+        $age=$_POST["age"];
+        $email=$_POST["email"];
+        $phone=$_POST["phone"];
+        $age=$_POST["age"];
+
+        $update="UPDATE stusents SET (username,regNo,course,age,email,phone) VALUES
+        ('$username','$regNo','$course','$age','$email','$phone')";
+        mysqli_query($conn, $update) or die(mysqli_error($conn));
+        $status = "Student Record Updated Successfully. </br></br>
+<a href='admincontrol.php'>View Updated Record</a>";
+echo '<p>'.$status.'</p>';
+    }else{
+        echo "error";
+    }
+                    ?>
                 </div>
             </div>        
         </div>
