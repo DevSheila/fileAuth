@@ -1,8 +1,15 @@
 {
     "students":[
 {"username":"trejo","regNo":"CI\/00984\/018","gender":"male","age":"19","course":"Bachelors of science comp technology","email":"trejo@gmail.com","password":"123","Image":"1631850649_splashimage.png","phone":"07689798","time":"Friday 17th of September 2021 06:50:49 AM"}
-,{"username":"School of computing","regNo":"compAdmin","gender":"female","age":"40","course":"School of computing admin","email":"schoolofcomputingadmin@gmail.com","password":"adm","Image":"1631851407_computing.jpg","phone":"07699768","time":"Friday 17th of September 2021 07:03:27 AM"}
 ,{"username":"wambui","regNo":"ccs\/00215\/019","gender":"female","age":"20","course":"Bachelors of science IT","email":"sheilasharon10@gmail.com","password":"123","Image":"1631865998_franck-morisset-UFhM8kMuQbo-unsplash.jpg","phone":"07899768","time":"Friday 17th of September 2021 11:06:38 AM"}
-,{"username":"sheila","regNo":"ccs\/00209\/019","gender":"female","age":"24","course":"Bachelors of science IT","email":"sheilasharon10@gmail.com","password":"123","Image":"1631867341_woman.png","phone":"07699768","time":"Friday 17th of September 2021 11:29:01 AM"}
+,{"username":"sheila","regNo":"ccs\/00209\/019","gender":"female","age":"24","course":"Bachelors of science IT","email":"sheilasharon10@gmail.com","password":"1234","Image":"1631867341_woman.png","phone":"07699768","time":"Friday 17th of September 2021 11:29:01 AM"}
+,{"username":"Russel Osiemo","regNo":"ccs\/00209\/019","gender":"male","age":"20","course":"Computer Science","email":"russelosiemo@gmail.com","password":"123","Image":"1632061396_computer.png","phone":"0733458005","time":"Sunday 19th of September 2021 05:23:16 PM"}
+,{"username":"School of computing","regNo":"compAdmin","gender":"Female","age":"40","course":"Computing and Informatics","email":"schoolofcomputingadmin@gmail.com","password":"adm","Image":"1631851407_computing.jpg","phone":"07699768","time":"Monday 20th of September 2021 08:17:58 PM"}
+,{"username":"Tom","regNo":"CCT\/00032\/019","gender":"male","age":"23","course":"Computer Technology","email":"tommy@gmail.com","password":"123","Image":"1632067876_promotion.png","phone":"0723383534","time":"Sunday 19th of September 2021 07:11:16 PM"}
+,{"username":"russel","regNo":"ccs\/00209\/019","gender":"male","age":"20","course":"Computer Science","email":"russelosiemo@gmail.com","password":"0123","Image":"1632150334_id-card.png","phone":"0103322109","time":"Monday 20th of September 2021 06:05:34 PM"}
+,{"username":"Kimosabi","regNo":"CCT\/00102\/019","gender":"Female","age":"20","course":"BSc. Computer Technology","email":"kimosabi1@gmail.com","password":"123","Image":"1632151226_logo.png","phone":"0794561235","time":"Monday 20th of September 2021 06:20:26 PM"}
+,{"username":"Peter_chaonic","regNo":"CI\/00209\/019","gender":"male","age":"20","course":"BSc. Computer Informatics","email":"Peter_chaonic@gmail.com","password":"123","Image":"1632159320_online-course.png","phone":"01033458003","time":"Monday 20th of September 2021 08:35:20 PM"}
+,{"username":"Anabelle_walker","regNo":"ccs\/00315\/019","gender":"Female","age":"20","course":"Computer Science","email":"anabelle@gmail.com","password":"123","Image":"1632161190_background1.jpg","phone":"0794561235","time":"Monday 20th of September 2021 09:06:30 PM"}
+,{"username":"Tylor_Frank","regNo":"CCS\/00032\/18","gender":"male","age":"20","course":"BSc. Computer Technology","email":"tylorfrank@gamil.com","password":"123","Image":"1632163468_computer.png","phone":"0723383534","time":"Monday 20th of September 2021 09:44:28 PM"}
 ]
 }

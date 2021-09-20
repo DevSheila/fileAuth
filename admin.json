@@ -1,0 +1,8 @@
+{
+    "admin":[  
+ {"username":"Mr Kamau","depIDlogin":"LEC/0231/015","school":"Computing and Informatics","gender":"Male","age":"33","email":"MrKamau@gmail.com","password":"masenoadmin","Image":"IMG_7144.jpg","phone":"076467892","time":"Tuesday 14th of September 2021 04:06:39 PM"}
+,{"username":"Mr_Goerge","depIDlogin":"SCI\/0021\/09","school":"Computing and Informatics","gender":"male","age":"67","email":"georgest12@yahoo.com","password":"1234","Image":"1632156245_Maseno-University-Logo.png","phone":"0200125613","time":"Monday 20th of September 2021 07:44:05 PM"}
+,{"username":"School of computing","depIDlogin":"compAdmin","school":"Computing and Informatics","gender":"Female","age":"40","email":"schoolofcomputingadmin@gmail.com","password":"adm","Image":"1631851407_computing.jpg","phone":"07699768","time":"Monday 20th of September 2021 08:17:58 PM"}
+,{"username":"Kingston Kioko","depIDlogin":"SCI\/0023\/10","school":"Computing and Informatics","gender":"male","age":"56","email":"kingston1@gmail.com","password":"123","Image":"1632161543_community.png","phone":"0737218221","time":"Monday 20th of September 2021 09:12:23 PM"}
+]
+}

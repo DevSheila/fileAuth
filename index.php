@@ -72,20 +72,22 @@
           <div class="d-flex justify-content-center">
                     <button  type="submit" class="btn btn-dark" id="log-btn" >Login</button>
                   </div>
+                  
 
           <p class="text-center m-3">or</p>
 
-          <!-- 
-          <div class="icons m-4">
-            <img src="./img/icons/facebook (1).png" alt="" />
-            <img src="./img/icons/twitter.png" alt="" />
-            <img src="./img/icons/google-plus.png" alt=""/>
-          </div> -->
+          
 
           <p class="text-center">
             Dont have an account?
             <span class="link sign-up"> Sign up here</span>
           </p>
+          <br>
+          <center>
+          <p>Administrator
+          <a href="adminindex.php">Access From Here.</a></p>
+          </center>
+          
         </form>
           </div>
         </div>
@@ -164,6 +166,7 @@
                       type="password"
                       class="form-control"
                       id="exampleInputPassword1"
+                      name="confirmpassword"
                       required
                     />
                   </div>

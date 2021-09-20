@@ -1,7 +1,17 @@
 <?php
-include("config.php");
-session_start();
-date_default_timezone_set("Africa/Nairobi");
+include "config.php";
+$id=$_GET["id"];
+mysqli_query($conn,"DELETE FROM students WHERE id=$id");
+?>
+<script type="text/javascript">
+window.location="admincontrol.php";
+</script>
+
+
+
+$username= $regNo=  $gender= $age=$course= $email= $phone= $password=$confirmpassword= "";
+  $image="";
+ if (isset($_POST['insert'])) {
   $username= $_POST['username'];
   $regNo= $_POST['regNo'];
   $gender= $_POST['gender'];
@@ -11,7 +21,7 @@ date_default_timezone_set("Africa/Nairobi");
   $phone= $_POST['phone'];
   $password= $_POST['password'];
   $confirmpassword= $_POST['confirmpassword'];
-  $image = $_FILE['images'];
+  $image = $_FILE['image'];
 
   $studentDb = "stud.json";
   // $lines = file("stud.json");
@@ -61,30 +71,6 @@ date_default_timezone_set("Africa/Nairobi");
                 echo("Connection failed: " . mysqli_connect_error());
               }else{
                 if($_SERVER["REQUEST_METHOD"] == "POST") {
-                  // username and password sent from form 
-                  // $myusername = mysqli_real_escape_string($conn,$_POST['username']);
-                  // $myemail= mysqli_real_escape_string($conn,$_POST['email']);
-                  // $mypassword = mysqli_real_escape_string($conn,$_POST['password']); 
-                  // if(empty(trim($_POST['username'],$_POST['regNO'],$_POST['gender'],$_POST['age'],$_POST['course'],$_POST['email'],$_POST['phone'],$_POST['password'],$_POST['confirmpassword']))){
-                  //   $empty_error="No field in this form is to be left empty";
-                    
-                  // }elseif(preg_match('/^[azA-Z0-9_]+$/',trim($_POST['username']))){
-                  //   $username_error = "username should have letters,numbers and underscores only.";
-                  //   }elseif (preg_match('/^[azA-Z0-9_]+$/',trim($_POST['regNO']))) {
-                  //    $regNO_error="Regestration Number should have letters,numbers and underscores only.";
-                  //   }elseif (strlen(trim($_POST['password']))< 5) {
-                  //     $password_error = "Enter A password with 5 - 10 characters no less.";
-                  //   }elseif  (strlen(trim($_POST['password'])) > 10 ) {
-                  //     $password_error = "Enter A password with 5 - 10 characters no more.";
-                  //   }elseif(trim($_POST['password'])!=trim($_POST['confirmpassword'])){
-                  //     $password_error = "The two passwords does not match";
-                  //   }elseif(trim($_POST['age'])<17){
-                  //    $age_error = "You must be at least 17 years to sign up";
-                  //   }
-                  //   elseif(!filter_var(trim($_POST['email'],FILTER_VALIDATE_EMAIL))){
-                  //     $email_error = "invalid email";
-                  //   }else{}
-                    
 
                   $sql = "INSERT INTO students (username,regNo,gender,age,course,email,password,image,phone,time)
                   VALUES ('$username','$regNo','$gender','$age','$course','$email','$password','$new_image_name','$phone','$time')";
@@ -115,5 +101,4 @@ date_default_timezone_set("Africa/Nairobi");
     else{
       echo "File Missing";
     }
-  
-?>
+  }

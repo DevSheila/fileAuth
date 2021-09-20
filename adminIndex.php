@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Portal</title>
+    <title>Administrator Portal</title>
     <link rel="stylesheet" href="css/index.css"  type="text/css"/>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all"/>
 
@@ -35,9 +35,9 @@
       <div class="form-container mt-3 pt-5">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-12">
-          <form id="signIn"  method="POST" action="dbLog.php" enctype="multipart/form-data">
+          <form id="signIn"  method="POST" action="adminlog.php" enctype="multipart/form-data">
           <h1 class="text-center title">
-            STUDENT PORTAL 
+           ADMINISTRATOR PORTAL 
           </h1>
           <h1 class="text-center title">
             <u>Login</u>
@@ -92,24 +92,36 @@
        
    
 
-                <form id="signUp" method="POST" action="sign.php" enctype="multipart/form-data">
+                <form id="signUp" method="POST" action="adminsign.php" enctype="multipart/form-data">
                   <h1 class="text-center title">
                     <b> Register</b>
                   </h1>
-                  
+                  <div class="mb-3">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username"/>
+                  </div>
               
                   <div class="mb-3">
-                    <label for="regNo">Department ID</label>
-                    <input type="text" class="form-control" id="depID" name="depID"/>
+                    <label for="depIDlogin">Department ID</label>
+                    <input type="text" class="form-control" id="depIDlogin" name="depIDlogin"/>
                   </div>
 
             
                   <div class="mb-3">
-                    <label for="course">School</label>
-                    <input type="text" class="form-control" id="school" name="course"/>
+                    <label for="school">School</label>
+                    <input type="text" class="form-control" id="school" name="school"/>
                   </div>
-
-
+                   
+                  
+                  <div class="mb-3">
+                    <label for="gender">Gender</label>
+                    <input type="text" class="form-control" id="gender" name="gender"/>
+                  </div>
+                   
+                  <div class="mb-3">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" id="age" name="age"/>
+                  </div>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label"
                       >Email address</label>
@@ -151,6 +163,7 @@
                       type="password"
                       class="form-control"
                       id="exampleInputPassword1"
+                      name="confirmpassword"
                       required
                     />
                   </div>

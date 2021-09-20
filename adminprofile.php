@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portal</title>
+    <title>Administrator Portal</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"type="text/css" media="all">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Press+Start+2P&display=swa" rel="stylesheet">
@@ -26,7 +26,7 @@
                     <?php
                         session_start();
 
-                        if($_SESSION['regNo'] == null ||$_SESSION['password'] == null){
+                        if($_SESSION['depIDlogin'] == null ||$_SESSION['password'] == null){
                             echo "<h1>Invalid user credentials,please try again!!</h1>";
                         }else{
 
@@ -36,7 +36,7 @@
                             <thead class="d-flex justify-content-center">
                                 <tr>
                                     <th scope="col" class="">
-                                        <h5> PROFILE</h5>
+                                        <h5>ADMIN PROFILE</h5>
                                     </th>
                                 </tr>
                             </thead>
@@ -50,16 +50,16 @@
                                             <?php
                                                
 
-                                                $jsondata = file_get_contents("stud.json");
+                                                $jsondata = file_get_contents("admin.json");
                                                 $json =json_decode($jsondata,true);
 
-                                                if( isset($_SESSION['regNo']  ) ) {
-                                                    $regNo =$_SESSION['regNo'];
+                                                if( isset($_SESSION['depIDlogin']  ) ) {
+                                                    $depIDlogin =$_SESSION['depIDlogin'];
 
-                                                    foreach($json['students'] as $student){
-                                                        if( ($student['regNo']==$regNo)){
-                                                            $username =$student['username'];
-                                                            $userimage =$student['Image'];
+                                                    foreach($json['admin'] as $admin){
+                                                        if( ($admin['depIDlogin']==$depIDlogin)){
+                                                            $username =$admin['username'];
+                                                            $userimage =$admin['Image'];
                                                            ?>
                                                             <span>  
                                                                 <img  src="<?php echo "userimg/".$userimage;?>" class="img-fluid rounded-circle" alt="logo" style="height: 100px;width: 100px;"/>
@@ -80,15 +80,15 @@
                                                                        
                                 <?php
                                                
-                                               $jsondata = file_get_contents("stud.json");
+                                               $jsondata = file_get_contents("admin.json");
                                                $json =json_decode($jsondata,true);
 
-                                               if( isset($_SESSION['regNo']  ) ) {
-                                                   $regNo =$_SESSION['regNo'];
+                                               if( isset($_SESSION['depIDlogin']  ) ) {
+                                                   $depIDlogin =$_SESSION['depIDlogin'];
 
-                                                   foreach($json['students'] as $student){
-                                                       if( ($student['regNo']==$regNo)){
-                                                        if($regNo == "compAdmin"){
+                                                   foreach($json['admin'] as $admin){
+                                                       if( ($admin['depIDlogin']==$admin)){
+                                                        if($depIDlogin == "compAdmin"){
                                                             ?>
                                                            
                                                            <?php 
@@ -104,7 +104,7 @@
                                                             <?php
                                                              
                                                
-                                                            echo "<h5><center> Registration Number : $regNo</center></h5>";
+                                                            echo "<h5><center> Registration Number : $depIDlogin</center></h5>";
 
                                                             ?>
                                                                     </h5>
@@ -123,15 +123,15 @@
                                          
                                             <?php
                                                
-                                               $jsondata = file_get_contents("stud.json");
+                                               $jsondata = file_get_contents("admin.json");
                                                $json =json_decode($jsondata,true);
 
-                                               if( isset($_SESSION['regNo']  ) ) {
-                                                   $regNo =$_SESSION['regNo'];
+                                               if( isset($_SESSION['depIDlogin']  ) ) {
+                                                   $depIDlogin =$_SESSION['depIDlogin'];
 
-                                                   foreach($json['students'] as $student){
-                                                       if( ($student['regNo']==$regNo)){
-                                                        if($regNo == "compAdmin"){
+                                                   foreach($json['admin'] as $admin){
+                                                       if( ($admin['depIDlogin']==$depIDlogin)){
+                                                        if($depIDlogin == "compAdmin"){
                                                             ?>
                                                            
                                                            <?php 
@@ -145,9 +145,9 @@
                                                                             <img src="img/online-course.png "alt="logo" style="height: 50px;width: 50px;"/>
                                                                         </span>
                                                             <?php
-                                                               $course =$student['course'];
+                                                               $school =$admin['school'];
                                                
-                                                            echo "<h5><center> Course :$course </center></h5>";
+                                                            echo "<h5><center> School :$school </center></h5>";
 
                                                             ?>
                                                                     </h5>
@@ -174,16 +174,16 @@
                                             </span>
                                             <?php
                                                
-                                               $jsondata = file_get_contents("stud.json");
+                                               $jsondata = file_get_contents("admin.json");
                                                $json =json_decode($jsondata,true);
 
-                                               if( isset($_SESSION['regNo']  ) ) {
-                                                   $regNo =$_SESSION['regNo'];
+                                               if( isset($_SESSION['depIDlogin']  ) ) {
+                                                   $depIDlogin =$_SESSION['depIDlogin'];
 
-                                                   foreach($json['students'] as $student){
-                                                       if( ($student['regNo']==$regNo)){
+                                                   foreach($json['admin'] as $admin){
+                                                       if( ($admin['depIDlogin']==$depIDlogin)){
                                                      
-                                                           $email =$student['email'];
+                                                           $email =$admin['email'];
                                                
                                                            echo "<h5><center> Email :$email </center></h5>";
                                                        }
@@ -202,15 +202,15 @@
                                     <a type="button"  class="btn btn-primary m-2"href="logout.php">Log out</a>
                                     <?php
                                                
-                                               $jsondata = file_get_contents("stud.json");
+                                               $jsondata = file_get_contents("admin.json");
                                                $json =json_decode($jsondata,true);
 
-                                               if( isset($_SESSION['regNo']  ) ) {
-                                                   $regNo =$_SESSION['regNo'];
+                                               if( isset($_SESSION['depIDlogin']  ) ) {
+                                                   $regNo =$_SESSION['depIDlogin'];
 
-                                                   foreach($json['students'] as $student){
-                                                       if( ($student['regNo']==$regNo)){
-                                                         if($regNo == "compAdmin"){
+                                                   foreach($json['admin'] as $admin){
+                                                       if( ($admin['depIDlogin']==$depIDlogin)){
+                                                         if($depIDlogin == "compAdmin"){
                                                              ?>
                                                              <a type="button"  class="btn btn-light m-2"href="admincontrol.php">Database</a>
                                                             <a type="button"  class="btn btn-success m-2"href="adminpdf.php">Student Details</a>
